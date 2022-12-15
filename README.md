@@ -1,7 +1,7 @@
 # Youtube-to-Audio-Downloader
 
-Requires installing pytube.
+If you are unsure about how to use this script, please consult the quick start guide.
 
-This program will download the highest quality audio stream available for each video in a youtube playlist. It will also format the files names with the video's title followed by the channel name.
+This is a python script that uses pytube to download the highest quality audio stream possible from every video in a playlist.
 
-The audio files will usually be .webm or .mp4 formats. Options for .wav or .mp3 are not currently available in this version.
+Right now, it only works with playlists, and it will only download audio. I'll probably get around to making more options eventually, but for now this is what there is.
