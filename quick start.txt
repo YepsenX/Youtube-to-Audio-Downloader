@@ -13,28 +13,27 @@ https://www.python.org/downloads/
 After python is installed, you'll have to install pytube - which is the python module needed to interact with youtube. Get to your terminal emulator.
 
 Windows Users:
-Hold the Windows Key & press R.
-Type 'cmd' into the Run window & press enter.
+Press the windows key + x, then tap i.
 
 Mac Users:
 Navigate to Applications/Utilities/Terminal
 
 Linux & other OSs:
-Anyone on a non Windows/Mac OS probably probably doesn't need these instrions or this guide.
+Anyone on a non Windows/Mac OS probably probably doesn't need these instrions or this guide. Ctrl+Alt+T
 
-Once in your terminal, type 'pip install pytube'.
+In your terminal, enter the command 'pip install pytube'
 
 
 
-Download the script from github.
-https://github.com/YepsenX/Youtube-to-Audio-Downloader
+Download this script from github.
+https://github.com/YepsenX/Youtube-to-Audio-Downloader/blob/main/YT%20to%20Audio.py
 
 Click the "<>Code" button and select "Download ZIP"
-Extract the file into a folder & right click the 'YT to Audio.py' file & open with Python.
+Extract the file into a folder & right click 'YT to Audio.py' & open with Python.
 
 
 
-You are now running the script. Things should be pretty self explainatory from here.
+You are now running the script. Follow the prompts.
 
 A few FYI's follow.
 
@@ -44,10 +43,9 @@ Currently the script only works with playlist URLs. If you want to download an i
 
 For an easy way to get a save path, navigate to your disered folder in your file explorer. Right click on the folder at the upper middle bar of your explorer & select "copy address."
 
-The script will most likely download the files as .webm or .mp4 file types. Until I get around to updating it, you'll have to convert the files yourself into more common formats such as .wav or .mp3
+The script will most likely download the files as .webm or .mp4 file types. If you want a more common file type like .mp3 / .wav you'll have to convert it yourself after it downloads (at least until I get around to patching in an automatic converter to the script). If don't have program which can play webm or mp4, I'd suggest VLC Media player as a FOSS.
+https://www.videolan.org/vlc/
 
-Youtube counts private videos that were once on your playlist against the "total videos" value even if you can't watch them. If your playlist says 100 videos and you only get 90, this may be why.
+"The script says that only some of the total videos in my playlist are available!" This is a youtube thing. If someone privates a video, it's regioned locked, or some other thing - it will still show up in your playlist even if you can't watch it. 
 
-Additionally, if a video is age restricted - there is no way I know of to download it using this method. Sorry, better luck next time.
-
-Any videos that are age restricted, or otherwise a watchable but not downloadable will be listed when the program finishes running so you know what is missing. I suggest saving this list somewhere if you want to reference it later, as it will disappear when you close the script.
+Age restricted videos are not able to be downloaded by this program. If these (or any other videos which are unable to be downloaded) exist in your playlist, the script will skip them & list the URLs which could not be downloaded when the entire playlist finishes downloading.
