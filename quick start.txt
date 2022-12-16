@@ -19,7 +19,7 @@ Mac Users:
 Navigate to Applications/Utilities/Terminal
 
 Linux & other OSs:
-Anyone on a non Windows/Mac OS probably probably doesn't need these instrions or this guide. Ctrl+Alt+T
+Anyone on a non Windows/Mac OS probably probably doesn't need these instructions or this guide. Ctrl+Alt+T
 
 In your terminal, enter the command 'pip install pytube'
 
@@ -43,9 +43,9 @@ Currently the script only works with playlist URLs. If you want to download an i
 
 For an easy way to get a save path, navigate to your disered folder in your file explorer. Right click on the folder at the upper middle bar of your explorer & select "copy address."
 
-The script will most likely download the files as .webm or .mp4 file types. If you want a more common file type like .mp3 / .wav you'll have to convert it yourself after it downloads (at least until I get around to patching in an automatic converter to the script). If don't have program which can play webm or mp4, I'd suggest VLC Media player as a FOSS.
+The script will most likely download the files as .webm or .mp4 file types. If you want a more common file type like .mp3 / .wav you'll have to convert it yourself after it downloads (eventually I might update the script to do this automatically). If don't have program which can play webm or mp4, I'd the FOSS VLC Media Player.
 https://www.videolan.org/vlc/
 
-"The script says that only some of the total videos in my playlist are available!" This is a youtube thing. If someone privates a video, it's regioned locked, or some other thing - it will still show up in your playlist even if you can't watch it. 
+"The script says that only some of the total videos in my playlist are available!" This is a youtube thing. Region locked videos, or those that have since been privated, still count against the 'videos in playlist' even if you can't access them.
 
-Age restricted videos are not able to be downloaded by this program. If these (or any other videos which are unable to be downloaded) exist in your playlist, the script will skip them & list the URLs which could not be downloaded when the entire playlist finishes downloading.
+"The program said some videos were unable to be downloaded then showed me a bunch of urls." Unfortunatly, age restricted videos cannot be downloaded with pytube. Any videos that couldn't be downloaded AFTER the script scans your playlist will be listed as URLs when the script is finished. (Please save this list somewhere, the program will not currently hold onto this.)
